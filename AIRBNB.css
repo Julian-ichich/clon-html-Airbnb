@@ -1,0 +1,755 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif */
+}
+
+
+.head{
+    position: fixed;
+    z-index: 500;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 11%;
+    
+    
+}
+.head a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.head li,img{
+    cursor: pointer;
+}
+.caja2 a:hover{
+    
+    font-weight: 900;
+}
+
+.caja1,.caja2,.caja3,.caja4{
+ background-color: transparent;
+ 
+
+
+}
+.caja1{
+    flex-basis: 20%;
+}
+.hijocaja1{
+    
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+.caja2{
+    flex-basis: 60%;
+}
+.hijocaja2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cajita{
+   
+    margin-left: 30%;
+    margin-right: auto;
+   
+}
+.item {
+    display: inline-block;
+    margin-right: 30px;
+
+    font-size:17px ;
+    font-family: inherit;
+    font-weight:900;
+}
+
+
+.caja3{
+    flex-basis: 15%;
+   
+}
+.hijocaja3{
+  padding-top:15%;
+   
+}
+.pontu{
+    margin-right: 6%;
+}
+
+.caja4{
+    flex-basis: 10%;
+    cursor: pointer;
+}
+.hijocaja4{
+    padding-top:10%;
+    padding-left: 0%;
+}
+.cajita3{
+    border: 0.1px solid rgb(138, 138, 138);
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    padding: 5%;
+}
+
+.cajita3:hover{
+    box-shadow: 0px 1px 2px 1px rgb(136, 136, 136);
+  
+}
+.perfil{
+    border-radius: 15px;
+    margin-left: 10%;
+    width: 40%;
+    height: 20%;
+}
+.logo{
+    width: 37%;
+    height: 38%;
+    margin-left: 30%;
+    margin-top: 8.5%;
+  
+}
+.iconoglobal{
+    width: 7%;
+    height: 7%;
+}
+#menu{
+    width: 30%;
+    height: 30%;
+}
+
+.barraprincipal{
+    top: 11%;
+    position: fixed;
+    z-index: 500;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    width: 100%;
+    height: 11%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding-bottom: 2%;
+    
+}
+
+img,span{
+    cursor: pointer;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 65%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    border: 0.2px solid rgb(224, 224, 224);
+    filter: drop-shadow( 5px 5px 10px rgb(221, 221, 221));
+    
+}
+.huesped{
+    padding-left: 15px;
+}
+.logobusqueda{
+    width: 35%;
+    height: 35%;
+    float: right;
+    padding-right: 5%;
+}
+.logobusqueda:hover{
+    filter: brightness(80%);
+}
+.barrita{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+
+
+.barrita:hover{
+    background-color: rgb(238, 238, 238);
+    
+}
+.relleno{
+    font-weight: lighter;
+    font-size: 300%;
+    color:  rgb(238, 238, 238);
+}
+
+.cuello{
+    position: fixed;
+    top: 22%;
+    z-index: 500;
+    background-color: white;
+    height: 12%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    /* border-bottom: 0.5px solid rgb(209, 209, 209); */
+    
+   
+    
+}
+.cuello span{
+    font-size: 12px;
+    padding-right: 14px;
+    margin-left: 12px;
+    
+}
+
+
+
+
+
+.cuello img{
+    margin-left: 10%;
+    filter: invert(0.4);    
+}
+
+.cuello img:hover{
+    filter: saturate(9);
+}
+
+.categorias{
+    background-color: white;
+    flex-basis: 65%;
+    cursor: pointer;
+    width: 80%;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+}
+.categorias::-webkit-scrollbar{
+    height: 8px;
+}
+
+.categorias::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+}
+
+
+.aplicaciones{
+    width: 30px;
+    height: 30px;
+    
+  
+}
+.aplicaciones1{
+    width: 20px;
+    height: 20px;
+}
+.espacios{
+    display: inline-block;
+    margin-top:10px ;
+    margin-right: 2%;
+    text-align: center;
+    background-color: transparent;
+    
+}
+.espacios:hover{
+    border-bottom: 0.5px solid black;
+}
+
+
+.filtros{
+    background-color: white;
+    flex-basis: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.bordedefiltro{
+    background-color: white;
+    border: 0.3px solid rgb(194, 194, 194);
+    border-radius: 15px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bordedefiltro:hover{
+   outline: 0.3px solid black;
+}
+
+
+.sinimpuestos{
+    background-color: white;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.botones{
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.3px solid rgb(194, 194, 194);
+    border-radius: 15px;
+    width: 90%;
+    height: 70%;
+}
+
+.botones:hover{
+    outline: 0.3px solid black;
+}
+
+
+
+
+.toggleContainer{
+    position: relative;
+    width: 40px;
+    height: 30px;
+    
+}
+.toggle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    & + .switch{
+        position:relative;
+        display: block;
+        background: rgb(148, 148, 148);
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.1s;
+    }
+    &:checked + .switch{
+        background: black;
+    }
+    & + .switch:before{
+        content:"";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background:white;
+        border-radius: 50%;
+        margin: 0px 2px;
+        left: 0%;
+        transition: 0.2s;
+    }
+    &:checked + .switch:before{
+        left: 100%;
+        transform: translate(calc(-100% - 2px), -50%);
+    }
+}
+
+.switch:hover{
+    background: rgb(122, 122, 122);
+}
+
+
+.cont{
+    margin-top: 18.5%;
+    background-color: white;
+    height: 1700px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    /* border-bottom: 0.5px solid rgb(209, 209, 209); */
+}
+.negrita{
+    font-weight: 900;
+}
+
+.cubierto{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding-right: 4%;
+    padding-left: 4%;
+    
+
+}
+
+.conti{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    /* border: 1px solid black; */
+    flex-direction: column;
+
+
+}
+
+.cajeta{
+    background-color:transparent;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 95%;
+    height: 70%;
+    
+}
+
+.cajeta::-webkit-scrollbar{
+    width: 1px;
+    height: 8px;
+}
+
+.cajeta::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.cajeta2{
+  
+    width: 100%;
+
+}
+.conti img{
+    width: 150px;
+    height: 90%;
+    border-radius: 20px;
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+.sticker{
+    position: sticky;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    height: 45px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    
+
+}
+.sticker1 a:visited{
+    text-decoration: none;
+    color: white;
+}
+.sticker1 a{
+    text-decoration: none;
+}
+
+.sticker img{
+    width: 10%;
+    height: 70%;
+    margin-left: 10px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.footer1,.footer2,.footer3{
+    
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.footer1{
+    background-color: white;
+    height: 20%;
+    display: flex;
+
+}
+
+.footer2{
+    background-color: rgb(245, 245, 245);
+    height: 70%;
+}
+
+
+.footer1caja{
+    
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer1caja2{
+   
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mostrar{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    width: 10%;
+    height: 80%;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer2caja{
+   
+    height: 20%;
+}
+
+
+.hola{
+    height: 50%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+    margin-left: 5%;
+}
+.inspi{
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+
+
+
+.item2 {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    font-size:17px ;
+    font-family: inherit;
+    font-weight:700;
+    
+   
+}
+
+.item2:hover{
+    border-bottom: 2px solid black;
+    
+}
+
+
+.footer2caja2{
+    padding-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    height: 40%;
+    
+}
+
+.cuadritos{
+    width: 15%;
+    height: 30%;
+}
+
+
+.footer2caja3{
+    display: flex;
+    justify-content: center;
+    border: 0.1px solid rgb(194, 194, 194);
+    height: 40%;
+}
+
+.li a:visited{
+    text-decoration: none;
+    color: black;
+}
+.li a{
+    text-decoration: none;
+    color: black;
+}
+.li a:hover{
+    text-decoration: underline;
+}
+.li a:active{
+    border: 1px solid black;
+}
+
+.li2 a:visited{
+    text-decoration: none;
+    color: black;
+}
+.li2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.li2 a:active{
+    border: 1px solid black;
+}
+.cuadrotes{
+    width: 31%;
+    height: 100%;
+    padding-left: 2%;
+    font-size: 16px;
+}
+
+.cuadrotes li{
+    padding-bottom: 12px;
+    list-style: none;
+}
+
+.footer3{
+    background-color: rgb(245, 245, 245); 
+    
+    flex-direction: row;
+    height: 10%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.iz{
+    
+    width: 50%;
+    height:100%;
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.iz img{
+    width: 15px;
+    height: 15px;
+}
+.izcaja{
+   
+    height: 70%;
+    margin-right: 1%;
+    padding-top: 15px;
+
+}
+
+
+
+
+.dere{
+   
+    width: 50%;
+    height: 100%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.dere img{
+    width: 20px;
+    height: 20px;
+}
+
+.derecaja{
+   
+    height: 70%;
+    margin-right: 2%;
+    padding-top: 15px;
+
+}
+
+.megusta{
+    position: absolute;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.megusta img{
+    width: 45%;
+    height: 25px;
+    margin-left: 50%;
+}
+
+.favorito{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    flex-basis: 45%;
+    cursor: pointer;
+}
+
+.corazones{
+    flex-basis: 20%;
+    filter: invert(9.9) grayscale(1) saturate(9);
+    
+}
+
+.corazones:hover{
+    transform: scale(1.2);
+    
+    
+}
+
+.iz a:visited{
+    text-decoration: none;
+    color: black;
+}
+.iz a{
+    text-decoration: none;
+    color: black;
+}
+
+.bordedefiltro{
+    cursor: pointer;
+}
+
+.sinimpuestos{
+    cursor: pointer;
+}
